@@ -39,7 +39,7 @@ def convert_pdf_to_text():
                 for chunk in chunks:
                     # Write each chunk to its own line
                     vault_file.write(chunk.strip() + "\n")  # Two newlines to separate chunks
-            print(f"PDF content appended to vault.txt with each chunk on a separate line.")
+            print("PDF content appended to vault.txt with each chunk on a separate line.")
 
 # Function to upload a text file and append to vault.txt
 def upload_txtfile():
@@ -69,7 +69,7 @@ def upload_txtfile():
                 for chunk in chunks:
                     # Write each chunk to its own line
                     vault_file.write(chunk.strip() + "\n")  # Two newlines to separate chunks
-            print(f"Text file content appended to vault.txt with each chunk on a separate line.")
+            print("Text file content appended to vault.txt with each chunk on a separate line.")
 
 # Function to upload a JSON file and append to vault.txt
 def upload_jsonfile():
@@ -102,7 +102,7 @@ def upload_jsonfile():
                 for chunk in chunks:
                     # Write each chunk to its own line
                     vault_file.write(chunk.strip() + "\n")  # Two newlines to separate chunks
-            print(f"JSON file content appended to vault.txt with each chunk on a separate line.")
+            print("JSON file content appended to vault.txt with each chunk on a separate line.")
 
 # Create the main window
 root = tk.Tk()

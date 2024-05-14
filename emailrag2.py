@@ -41,7 +41,7 @@ def load_or_generate_embeddings(vault_content, embeddings_file):
             print(f"Invalid JSON format in embeddings file '{embeddings_file}'.")
             embeddings = []
     else:
-        print(f"No embeddings found. Generating new embeddings...")
+        print("No embeddings found. Generating new embeddings...")
         embeddings = generate_embeddings(vault_content)
         save_embeddings(embeddings, embeddings_file)
     return torch.tensor(embeddings)
